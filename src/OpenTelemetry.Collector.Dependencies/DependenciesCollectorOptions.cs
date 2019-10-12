@@ -13,14 +13,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Net.Http;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Trace.Sampler;
 
 namespace OpenTelemetry.Collector.Dependencies
 {
-    using System;
-    using System.Net.Http;
-    using OpenTelemetry.Trace;
-    using OpenTelemetry.Trace.Sampler;
-
     /// <summary>
     /// Options for dependencies collector.
     /// </summary>

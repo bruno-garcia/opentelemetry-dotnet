@@ -14,17 +14,16 @@
 // limitations under the License.
 // </copyright>
 
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using OpenTelemetry.Exporter.Jaeger.Implementation;
+using OpenTelemetry.Trace;
+using Xunit;
 
 namespace OpenTelemetry.Exporter.Jaeger.Tests.Implementation
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using OpenTelemetry.Exporter.Jaeger.Implementation;
-    using OpenTelemetry.Trace;
-    using Xunit;
-
     public class JaegerSpanConverterTest
     {
         private const long MillisPerSecond = 1000L;

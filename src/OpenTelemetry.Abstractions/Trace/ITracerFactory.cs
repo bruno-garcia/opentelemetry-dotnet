@@ -13,12 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using OpenTelemetry.Context;
+using OpenTelemetry.Context.Propagation;
 
 namespace OpenTelemetry.Trace
 {
-    using OpenTelemetry.Context;
-    using OpenTelemetry.Context.Propagation;
-
     /// <summary>
     /// Creates Tracers for an instrumentation library.
     /// </summary>

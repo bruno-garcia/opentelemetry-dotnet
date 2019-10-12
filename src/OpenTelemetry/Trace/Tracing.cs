@@ -13,12 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
 
 namespace OpenTelemetry.Trace
 {
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-
     /// <summary>
     /// Class that manages a global instance of the <see cref="Tracer"/>.
     /// </summary>

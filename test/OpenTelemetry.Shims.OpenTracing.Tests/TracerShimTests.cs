@@ -13,18 +13,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Collections.Generic;
+using global::OpenTracing;
+using global::OpenTracing.Propagation;
+using Moq;
+using OpenTelemetry.Context.Propagation;
+using OpenTelemetry.Trace;
+using Xunit;
 
 namespace OpenTelemetry.Shims.OpenTracing.Tests
 {
-    using System;
-    using System.Collections.Generic;
-    using global::OpenTracing;
-    using global::OpenTracing.Propagation;
-    using Moq;
-    using OpenTelemetry.Context.Propagation;
-    using OpenTelemetry.Trace;
-    using Xunit;
-
     public class TracerShimTests
     {
         [Fact]

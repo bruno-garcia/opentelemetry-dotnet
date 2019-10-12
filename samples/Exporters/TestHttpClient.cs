@@ -13,18 +13,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Net.Http;
+using System.Threading;
+using OpenTelemetry.Collector.Dependencies;
+using OpenTelemetry.Exporter.Zipkin;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Trace.Export;
+using OpenTelemetry.Trace.Sampler;
 
 namespace Samples
 {
-    using System;
-    using System.Net.Http;
-    using System.Threading;
-    using OpenTelemetry.Collector.Dependencies;
-    using OpenTelemetry.Exporter.Zipkin;
-    using OpenTelemetry.Trace;
-    using OpenTelemetry.Trace.Export;
-    using OpenTelemetry.Trace.Sampler;
-
     internal class TestHttpClient
     {
         internal static object Run()

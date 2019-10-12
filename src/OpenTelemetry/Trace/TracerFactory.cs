@@ -13,16 +13,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System.Collections.Generic;
+using OpenTelemetry.Context.Propagation;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
 
 namespace OpenTelemetry.Trace
 {
-    using System.Collections.Generic;
-    using OpenTelemetry.Context.Propagation;
-    using OpenTelemetry.Resources;
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-   
-    /// <inheritdoc/>
+       /// <inheritdoc/>
     public sealed class TracerFactory : ITracerFactory
     {
         private readonly object lck = new object();

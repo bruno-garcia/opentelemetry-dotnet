@@ -13,13 +13,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Diagnostics;
+using OpenTelemetry.Trace;
 
 namespace OpenTelemetry.Collector
 {
-    using System;
-    using System.Diagnostics;
-    using OpenTelemetry.Trace;
-
     public abstract class ListenerHandler<TInput>
     {
         protected readonly ITracer Tracer;

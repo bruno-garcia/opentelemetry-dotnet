@@ -15,25 +15,24 @@
 // </copyright>
 
 using OpenTelemetry.Resources;
+using Xunit;
+using Microsoft.AspNetCore.Mvc.Testing;
+using TestApp.AspNetCore._2._0;
+using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
+using Moq;
+using Microsoft.AspNetCore.TestHost;
+using System;
+using OpenTelemetry.Context.Propagation;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace OpenTelemetry.Collector.AspNetCore.Tests
 {
-    using Xunit;
-    using Microsoft.AspNetCore.Mvc.Testing;
-    using TestApp.AspNetCore._2._0;
-    using System.Threading.Tasks;
-    using Microsoft.Extensions.DependencyInjection;
-    using OpenTelemetry.Trace;
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-    using Moq;
-    using Microsoft.AspNetCore.TestHost;
-    using System;
-    using OpenTelemetry.Context.Propagation;
-    using Microsoft.AspNetCore.Http;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-
     // See https://github.com/aspnet/Docs/tree/master/aspnetcore/test/integration-tests/samples/2.x/IntegrationTestsSample
     public class BasicTests
         : IClassFixture<WebApplicationFactory<Startup>>

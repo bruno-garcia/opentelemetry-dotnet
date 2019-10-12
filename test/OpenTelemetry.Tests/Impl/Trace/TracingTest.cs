@@ -13,13 +13,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
+using Xunit;
 
 namespace OpenTelemetry.Trace.Test
 {
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-    using Xunit;
-
     public class TracingTest
     {
         [Fact]

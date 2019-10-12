@@ -13,19 +13,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
+using OpenTelemetry.Trace.Internal;
+using OpenTelemetry.Utils;
 
 namespace OpenTelemetry.Trace
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using OpenTelemetry.Resources;
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-    using OpenTelemetry.Trace.Internal;
-    using OpenTelemetry.Utils;
-
     /// <summary>
     /// Span implementation.
     /// </summary>

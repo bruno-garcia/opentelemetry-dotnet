@@ -13,13 +13,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using Microsoft.AspNetCore.Http;
+using OpenTelemetry.Trace;
 
 namespace OpenTelemetry.Collector.AspNetCore
 {
-    using System;
-    using Microsoft.AspNetCore.Http;
-    using OpenTelemetry.Trace;
-
     /// <summary>
     /// Options for requests collector.
     /// </summary>

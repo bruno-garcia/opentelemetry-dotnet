@@ -13,17 +13,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+using Microsoft.AspNetCore.Http;
+using OpenTelemetry.Collector.AspNetCore.Implementation;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Utils;
 
 namespace OpenTelemetry.Collector.AspNetCore
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Reflection;
-    using Microsoft.AspNetCore.Http;
-    using OpenTelemetry.Collector.AspNetCore.Implementation;
-    using OpenTelemetry.Trace;
-    using OpenTelemetry.Utils;
-
     /// <summary>
     /// Requests collector.
     /// </summary>

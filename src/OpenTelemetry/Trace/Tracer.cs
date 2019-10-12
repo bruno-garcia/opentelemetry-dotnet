@@ -13,18 +13,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System;
+using System.Diagnostics;
+using OpenTelemetry.Context;
+using OpenTelemetry.Context.Propagation;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace.Config;
+using OpenTelemetry.Trace.Export;
+using OpenTelemetry.Trace.Internal;
 
 namespace OpenTelemetry.Trace
 {
-    using System;
-    using System.Diagnostics;
-    using OpenTelemetry.Context;
-    using OpenTelemetry.Context.Propagation;
-    using OpenTelemetry.Resources;
-    using OpenTelemetry.Trace.Config;
-    using OpenTelemetry.Trace.Export;
-    using OpenTelemetry.Trace.Internal;
-
     /// <inheritdoc/>
     public sealed class Tracer : ITracer
     {

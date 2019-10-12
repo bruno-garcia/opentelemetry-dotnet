@@ -13,15 +13,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // </copyright>
+using System.Linq;
+using Google.Cloud.Trace.V2;
+using Google.Protobuf.WellKnownTypes;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Trace.Config;
 
 namespace OpenTelemetry.Exporter.Stackdriver.Implementation
 {
-    using System.Linq;
-    using Google.Cloud.Trace.V2;
-    using Google.Protobuf.WellKnownTypes;
-    using OpenTelemetry.Trace;
-    using OpenTelemetry.Trace.Config;
-
     internal static class SpanExtensions
     {
         /// <summary>

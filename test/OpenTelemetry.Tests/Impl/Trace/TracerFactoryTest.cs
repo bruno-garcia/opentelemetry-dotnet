@@ -14,12 +14,11 @@
 // limitations under the License.
 // </copyright>
 
+using System.Linq;
+using Xunit;
 
 namespace OpenTelemetry.Trace.Test
 {
-    using System.Linq;
-    using Xunit;
-
     public class TracerFactoryTest
     {
         private readonly TracerFactory tracerFactory = new TracerFactory();

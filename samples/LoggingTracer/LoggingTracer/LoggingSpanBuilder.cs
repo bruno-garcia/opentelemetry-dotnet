@@ -1,16 +1,15 @@
 ﻿// <copyright file="LoggingSpanBuilder.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using OpenTelemetry.Context;
+using OpenTelemetry.Trace;
 
 namespace LoggingTracer
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using OpenTelemetry.Context;
-    using OpenTelemetry.Trace;
-
     public class LoggingSpanBuilder : ISpanBuilder
     {
         private string spanName;
